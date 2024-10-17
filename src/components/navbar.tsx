@@ -3,15 +3,11 @@ import { cn } from "@/lib/utils";
 import { CalculatorIcon, CircleUserIcon, HomeIcon, SearchIcon } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import { usePathname, useRouter } from "next/navigation";
 import React, { useEffect, useState } from "react";
 import LinkHome from "./LinkHome";
 import HamburgerMenu from "./HamburgerMenu";
 
 const Navbar: React.FC = () => {
-  const pathname = usePathname();
-  const router = useRouter();
-
   const [language, setLanguage] = useState("Indonesia"); // State untuk bahasa
   const [isDropdownOpen, setDropdownOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
@@ -32,26 +28,12 @@ const Navbar: React.FC = () => {
 
   const handleLanguageChange = (lang: string) => {
     setLanguage(lang);
+    console.log(language)
     setDropdownOpen(false); // Tutup dropdown setelah memilih bahasa
   };
 
   const toggleDropdown = () => {
     setDropdownOpen(!isDropdownOpen); // Membuka atau menutup dropdown saat ID di-klik
-  };
-
-  const handleHomeLink = () => {
-    if (pathname == "/") {
-      backToTop();
-    } else {
-      router.push("/");
-    }
-  };
-
-  const backToTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    });
   };
 
   return (

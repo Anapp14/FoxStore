@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import { FacebookIcon, GithubIcon, InstagramIcon } from "lucide-react";
+import { GithubIcon} from "lucide-react";
 import Image from "next/image";
 import LinkHome from "./LinkHome";
 

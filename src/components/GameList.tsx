@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import { SearchIcon } from "lucide-react"; // Menggunakan ikon Search dari lucide-react
+import Image from "next/image";
 
 const GameList = () => {
   // Data daftar game
@@ -72,7 +73,7 @@ const GameList = () => {
       <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-4">
         {filteredGames.slice(0, visibleCount).map((game) => (
           <div key={game.id} className="border p-4 rounded-lg shadow-lg bg-white">
-            <img src={game.image} alt={game.name} className="w-full h-40 object-cover mb-4 rounded-lg" />
+            <Image src={game.image} alt={game.name} className="w-full h-40 object-cover mb-4 rounded-lg"width={1000} height={1000} />
             <h2 className="text-lg font-bold mb-2">{game.name}</h2>
             <p>{game.description}</p>
           </div>

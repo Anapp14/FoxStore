@@ -4,6 +4,7 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper-bundle.css";
 import { Autoplay, Navigation, Pagination } from "swiper/modules";
+import Image from "next/image";
 
 const ImageCarousel = () => {
   const images = [
@@ -27,7 +28,7 @@ const ImageCarousel = () => {
       >
         {images.map((image, index) => (
           <SwiperSlide key={index} className="h-full">
-            <img
+            <Image width={1080} height={800}
               src={image.src}
               alt={image.alt}
               className="w-full h-full" // Ensure image takes full height and maintains aspect ratio

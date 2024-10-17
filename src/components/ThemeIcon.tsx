@@ -1,5 +1,4 @@
 import { MoonIcon, SunIcon } from 'lucide-react';
-import { useState, useEffect } from 'react';
 
 interface ThemeToggleProps {
   toggleTheme: () => void;  // Fungsi untuk mengganti tema

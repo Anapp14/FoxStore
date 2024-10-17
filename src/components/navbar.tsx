@@ -58,10 +58,10 @@ const Navbar: React.FC = () => {
     <div className="w-full sticky top-0 inset-x-0 z-50">
       <nav
         className={cn(
-          "text-white relative z-[60] w-full min-w-[80%] lg:min-w-[800px] will-change-auto transition-all duration-700 border-transparent max-w-7xl mx-auto ",
+          "text-white relative z-[60] w-full min-w-[80%] lg:min-w-[800px] will-change-auto transition-all duration-700 border-transparent mx-auto ",
           !scrolled
             ? "bg-gray-900 dark:bg-gray-900 translate-y-0 w-full"
-            : "bg-gray-900/80 dark:bg-gray-900/80 translate-y-5 w-[40%] backdrop-blur-md border dark:border-l-0 dark:border-r-0 dark:border-b-0 dark:border-t border-border shadow-inner rounded-full"
+            : "bg-gray-900/80 dark:bg-gray-900/80 translate-y-5 w-[40%] backdrop-blur-md border dark:border-l-0 dark:border-r-0 dark:border-b-0 dark:border-t border-border shadow-inner rounded-full max-w-7xl"
         )}
       >
         <div className="flex items-center justify-start px-0 pl-4">

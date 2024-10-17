@@ -8,7 +8,7 @@ import { Autoplay, Navigation, Pagination } from "swiper/modules";
 const ImageCarousel = () => {
   const images = [
     { src: "/1.png", alt: "Banner 1" },
-    { src: "/3.png", alt: "Banner 2" },
+    { src: "/VIP.png", alt: "Banner 2" },
     { src: "/banner1.webp", alt: "Banner 3" },
     // Tambahkan gambar lainnya jika diperlukan
   ];

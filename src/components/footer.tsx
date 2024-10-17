@@ -28,7 +28,7 @@ const Footer = () => {
                 <Image src={"/Instagram.svg"} alt="Ig" width={30} height={30}></Image>
               </Link>
               <Link
-                href={"https://www.instagram.com/akhnaf_ryn/"}
+                href={"https://wa.me/+6288226398703"}
                 className="bg-transparent hover:bg-slate-700 transition-colors duration-200 flex items-center justify-center size-10 rounded-full"
                 target="_blank"
               >
